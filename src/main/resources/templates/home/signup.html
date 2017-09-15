@@ -5,20 +5,21 @@
 <title>Welcome to the Jungle</title>
 </head>
 <body>
-
-{{#errorMessage}}
-  <div>{{ errorMessage }}</div>
-{{/errorMessage}}
-
-<form method="post" action="/signup">
-  <input type="text" name="username" required>
-  <br>
-  <input type="password" name="password" required>
-  <br>
-  <input type="hidden" name="{{ _csrf.parameterName }}" value="{{ _csrf.token }}">
-  <br>
-  <button>Sign up!</button>
-</form>
+	{{> common/_navigation }}
+	
+	{{#errorMessage}}
+	  <div>{{ errorMessage }}</div>
+	{{/errorMessage}}
+	
+	<form method="post" action="/signup">
+	  <input type="text" name="username" required>
+	  <br>
+	  <input type="password" name="password" required>
+	  <br>
+	  <input type="hidden" name="{{ _csrf.parameterName }}" value="{{ _csrf.token }}">
+	  <br>
+	  <button>Sign up!</button>
+	</form>
 
 </body>
 </html>
