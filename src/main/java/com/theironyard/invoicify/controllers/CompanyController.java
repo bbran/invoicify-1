@@ -1,7 +1,5 @@
 package com.theironyard.invoicify.controllers;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
